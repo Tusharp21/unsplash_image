@@ -13,8 +13,9 @@ class ImageSpider(scrapy.Spider):
         yield SeleniumRequest(url=url, callback=self.parse ,wait_time=10)
 
     def parse(self,response):
-        row_img_url = response.xpath('//div/img/@src').getall()
-        title = response.xpath('//div/a/@title').getall()
+        row_img_url = response.xpath('//div[@class="MorZF"]/img/@src').getall()
+        # row_img_url = response.xpath("//div[@class='quote']/span[@class='text']").extract()
+        # title = response.xpath('//div[@class="zmDAx"/a/@title').getall()
 
         # print(title)
         # if title is not None:
