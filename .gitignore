@@ -1,4 +1,4 @@
 chromedriver.exe
 img_folder
 __pycache__
-
+.gitignore
