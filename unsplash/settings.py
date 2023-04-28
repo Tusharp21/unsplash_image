@@ -19,10 +19,7 @@ DOWNLOADER_MIDDLEWARES = {
      }
 
 
-# ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
-ITEM_PIPELINES = {'unsplash.pipelines.CustomImagePipeline': 1}
-IMAGES_STORE = 'Img_folder'
-# FEED_EXPORT_FIELDS = ['title']
+
 
 
 
@@ -32,6 +29,11 @@ BOT_NAME = "unsplash"
 SPIDER_MODULES = ["unsplash.spiders"]
 NEWSPIDER_MODULE = "unsplash.spiders"
 
+
+ITEM_PIPELINES = {'scrapy.pipelines.images.ImagesPipeline': 1}
+# ITEM_PIPELINES = {'unsplash.pipelines.CustomImagePipeline': 1}
+IMAGES_STORE = 'Img_folder'
+# FEED_EXPORT_FIELDS = ['title']
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "unsplash (+http://www.yourdomain.com)"
