@@ -5,12 +5,12 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
+# from itemadapter import ItemAdapter
 
 
-class UnsplashPipeline:
-    def process_item(self, item, spider):
-        return item
+# class UnsplashPipeline:
+#     def process_item(self, item, spider):
+#         return item
 
 
 
